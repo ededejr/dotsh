@@ -36,7 +36,7 @@ var makeCmd = &cobra.Command{
 		s := openai.NewSession(apiKey)
 
 		// Define prompt for generating script
-		prompt := fmt.Sprintf("Write a bash script which does the following: \"%s\". I only want the code in a valid .sh file format for a MacOS machine.", input)
+		prompt := fmt.Sprintf("Write a bash script which does the following: \"%s\". I only want the code in a valid .sh file format.", input)
 
 		// Generate script using OpenAI completion API
 		client := chat.NewClient(s, "gpt-3.5-turbo")
