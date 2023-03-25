@@ -4,7 +4,7 @@ A CLI tool for generating and running bash scripts using `gpt-3.5.turbo`.
 
 Designed and implemented using [ChatGPT](https://chat.openai.com), inspired by this [Twitter thread](https://twitter.com/ken_wheeler/status/1639235612166201346).
 
-```sh
+```
 ➜  ~ dotsh
 A CLI tool for generating and running executable scripts based on OpenAI chat completion
 
@@ -31,14 +31,14 @@ Use "dotsh [command] --help" for more information about a command.
 
 Generate a script to check the weather.
 
-```sh
+```
 ➜  ~ dotsh make check-weather "checks the weather for a city given as an argument using wttr.in"
 Generated script 'check-weather.sh'
 ```
 
 You can now view the script that was generated.
 
-```sh
+```
 ➜  ~ dotsh read check-weather
 #!/bin/bash
 
@@ -58,7 +58,7 @@ exit 0
 
 If you're content, go ahead and run the script.
 
-```sh
+```
 ➜  ~ dotsh run check-weather mississauga
 Current weather in mississauga: Rain, mist
 +3°C
