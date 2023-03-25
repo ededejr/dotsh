@@ -4,7 +4,7 @@ A CLI tool for generating and running bash scripts using `gpt-3.5.turbo`.
 
 Designed and implemented using [ChatGPT](https://chat.openai.com), inspired by this [Twitter thread](https://twitter.com/ken_wheeler/status/1639235612166201346).
 
-```
+```sh
 ➜  ~ dotsh
 A CLI tool for generating and running executable scripts based on OpenAI chat completion
 
