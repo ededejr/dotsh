@@ -1,6 +1,6 @@
 ### dotsh
 
-A CLI tool for generating and running bash scripts using `gpt-3.5.turbo`.
+A CLI tool for generating and running bash scripts using `gpt-4`.
 
 Designed and implemented using [ChatGPT](https://chat.openai.com), inspired by this [Twitter thread](https://twitter.com/ken_wheeler/status/1639235612166201346).
 
