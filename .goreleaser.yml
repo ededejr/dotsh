@@ -1,5 +1,7 @@
 # This is an example .goreleaser.yml file with some sensible defaults.
 # Make sure to check the documentation at https://goreleaser.com
+# ---
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
 before:
   hooks:
     # You may remove this if you don't use go modules.
@@ -12,7 +14,10 @@ builds:
     goos:
       - linux
       - darwin
-
+    ldflags:
+      - '-s -w -X build.Version={{.Version}} -X build.Commit={{.Commit}} -X build.Date={{.Date}} -X build.BuiltBy=goreleaser -X build.User=$(id -u -n)'
+signs:
+  - artifacts: binary
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.
