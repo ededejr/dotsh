@@ -15,7 +15,7 @@ builds:
       - linux
       - darwin
     ldflags:
-      - '-s -w -X build.Version={{.Version}} -X build.Commit={{.Commit}} -X build.Date={{.Date}} -X build.BuiltBy=goreleaser -X build.User=$(id -u -n)'
+      - '-s -w -X build.Version={{.Version}} -X build.Commit={{.Commit}} -X build.Date={{.Date}} -X build.BuiltBy=goreleaser -X build.User=ededejr'
 signs:
   - artifacts: binary
 archives:
